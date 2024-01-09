@@ -1,0 +1,56 @@
+#projects {
+  display: flex;
+  justify-content: center;
+  padding-bottom: var(--space-4);
+  .layout {
+    flex-direction: column;
+    gap: var(--space-4);
+
+    .projects__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h1 {
+        font-size: var(--heading-size-1);
+        line-height: var(--heading-line-1);
+        color: var(--heading-color);
+        letter-spacing: var(--heading-char-space-1);
+      }
+      button {
+        @include button;
+      }
+    }
+    .projects__content {
+      display: grid;
+      grid-template-columns: repeat(2, calc(50% - (var(--space-6) / 2)));
+      grid-template-rows: repeat(3, 1fr);
+      gap: var(--space-4) var(--space-6);
+      .projects__card {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-5);
+        .projects__card__layout {
+          display: flex;
+          flex-direction: column;
+          gap: var(--space-7);
+          h2 {
+            font-size: var(--heading-size-3);
+            line-height: var(--heading-line-3);
+            color: var(--heading-color);
+          }
+          div {
+            display: flex;
+            align-items: center;
+            gap: var(--space-5);
+            p {
+              font-size: var(--text-size);
+              line-height: var(--text-line);
+              color: var(--text-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}

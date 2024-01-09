@@ -1,0 +1,80 @@
+#footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-color-2);
+  padding: var(--space-4) 0;
+  --rings-size: 33rem;
+  .layout {
+    flex-direction: column;
+    .contact {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: var(--space-4);
+      position: relative;
+
+      .contact__content {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-2);
+        h1 {
+          font-size: var(--heading-size-1);
+          line-height: var(--heading-line-1);
+          letter-spacing: var(--heading-char-space-1);
+          color: var(--heading-color);
+        }
+        p {
+          font-size: var(--text-size);
+          line-height: var(--text-line);
+          color: var(--text-color);
+          max-width: 26.5rem;
+        }
+      }
+      .contact__form {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-3);
+
+        input,
+        textarea {
+          background: none;
+          outline: none;
+          border: none;
+          border-bottom: 2px solid var(--input-color);
+          padding: var(--space-1);
+          min-width: 27rem;
+          color: var(--text-color);
+          text-transform: uppercase;
+        }
+        button {
+          align-self: flex-end;
+          @include button;
+        }
+      }
+      .footer__rings {
+        position: absolute;
+        left: calc((var(--rings-size) / 1.6) * -1);
+        bottom: calc(var(--rings-size) / 14);
+        img {
+          width: var(--rings-size);
+        }
+      }
+    }
+    .social__media {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid var(--line-color);
+      padding-top: var(--space-3);
+      h1 {
+        color: var(--heading-color);
+        font-size: calc(var(--heading-size-3) + 10px);
+      }
+      div {
+        display: flex;
+        align-items: center;
+        gap: var(--space-3);
+        margin-right: var(--space-3);
+      }
+    }
+  }
+}

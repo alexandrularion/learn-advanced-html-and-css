@@ -1,0 +1,22 @@
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--nav-size);
+  position: relative;
+  z-index: 300;
+  .layout {
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      color: var(--heading-color);
+      font-size: calc(var(--heading-size-3) + 10px);
+    }
+    div {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      margin-right: var(--space-3);
+    }
+  }
+}
