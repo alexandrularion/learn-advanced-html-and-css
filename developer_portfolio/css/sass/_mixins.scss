@@ -1,0 +1,46 @@
+// Button
+@mixin button {
+  border: none;
+  appearance: none;
+  background: none;
+  outline: none;
+  width: max-content;
+  cursor: pointer;
+  border-bottom: 2px solid var(--color-2);
+  text-transform: uppercase;
+  padding: var(--space-1) 0;
+  transition: 0.1s all ease-in-out;
+  font-size: var(--text-size);
+  line-height: var(--text-line);
+  color: var(--color-4);
+  &:hover {
+    color: var(--color-2);
+  }
+}
+
+// Heading (h1,h2,h3 etc)
+// $variant can be ( sm, md, lg)
+@mixin heading($variant: sm) {
+  @if $variant == sm {
+    font-size: var(--heading-size-3);
+    line-height: var(--heading-line-3);
+  } @else if $variant == md {
+    font-size: var(--heading-size-2);
+    line-height: var(--heading-line-2);
+    letter-spacing: var(--heading-space-2);
+  } @else if $variant == lg {
+    font-size: var(--heading-size-1);
+    line-height: var(--heading-line-1);
+    letter-spacing: var(--heading-space-1);
+  }
+  font-family: var(--heading-family);
+  color: var(--color-5);
+}
+
+// Text
+@mixin text {
+  font-family: var(--text-family);
+  color: var(--color-4);
+  font-size: var(--text-size);
+  line-height: var(--text-line);
+}

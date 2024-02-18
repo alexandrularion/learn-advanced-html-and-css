@@ -1,4 +1,33 @@
+@font-face {
+  font-family: SpaceGroteskBold;
+  src: url(../../assets/fonts/SpaceGrotesk-Bold.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: SpaceGroteskMedium;
+  src: url(../../assets/fonts/SpaceGrotesk-Medium.ttf);
+  font-weight: normal;
+}
+
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  font-family: var(--text-family);
+  font-weight: 600;
+}
+
+body {
+  background-color: var(--color-1);
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.layout {
+  width: 1110px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
