@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* Prevents the element to not have extra width and height */
+  box-sizing: border-box;
+}
+
+/* Wrap all the items on the next lines */
+.flexbox-wrapper {
+  display: flex;
+  background-color: brown;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  /* Cross Axis */
+  align-items: center;
+  /* Main Axis */
+  justify-content: center;
+}
+
+.flexbox-container {
+  display: flex;
+  gap: 30px;
+  /* Multi line items */
+  flex-wrap: wrap;
+}
+
+.flexbox-item {
+  background-color: aqua;
+  width: 300px;
+  height: 300px;
+}
+
+/* Align all the items center X/Y axis  */
+.flexbox2-wrapper {
+  display: flex;
+  background-color: cadetblue;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexbox2-container {
+  display: flex;
+  /* Switch the order of the items */
+  flex-direction: row-reverse;
+  gap: 30px;
+}
+
+.flexbox2-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: chocolate;
+  width: 300px;
+  height: 300px;
+}
+
+/* Direction column / align all the items on center  */
+
+.flexbox3-wrapper {
+  display: flex;
+  background-color: blue;
+  width: 100%;
+  height: 100vh;
+}
+
+.flexbox3-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 50px;
+}
+
+.flexbox3-item {
+  background-color: chartreuse;
+  width: 200px;
+  height: 200px;
+}
+
+.flexbox3-item:nth-child(3) {
+  align-self: flex-start;
+}
