@@ -3,3 +3,52 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.section {
+  width: 100%;
+  height: 100vh;
+}
+
+/* ALIGN ITEM CENTER ON BOTH AXIS (X,Y) */
+.section-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+}
+
+/* ALIGN CONTENT CENTER ON BOTH AXIS (X,Y) */
+.item-section-1 {
+  display: grid;
+  place-items: center;
+}
+
+/* 
+  GRID: 2x2 (4 cells)
+  Rows: 2 x 50vh 
+  Columns: 2 x 50% (1fr = 50%)
+*/
+.section-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 50vh);
+}
+
+/*
+  GRID: 1x2 (2 cells)
+  Rows: 1 x 80% (image), 1 x max-content (height of heading)
+  Columns: 1 x auto (created automatically)
+  Gap: 30px (distance between image and heading)
+*/
+.section-2 .item {
+  display: grid;
+  place-items: center;
+  grid-template-rows: 80% max-content;
+  gap: 30px;
+}
+
+.section-2 .item img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
