@@ -1,0 +1,36 @@
+/* *: Selects all the elements from HTML */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#unique-paragraph {
+  /* Select the id with value of "unique-paragraph" */
+}
+
+.my-paragraph {
+  /* Select all the elements with class of value "my-paragraph" */
+}
+
+input[type="text"] {
+  /* Select all the inputs with attribute type of "text" */
+}
+
+input[type="email"] {
+  /* Select all the inputs with attribute type of "email" */
+}
+
+.my-password[type="password"] {
+  /* Select all the inputs with attribute 
+  type of "password"  and "my-password" class
+  */
+}
+
+p {
+  /* Select all the element of type paragraph */
+}
