@@ -50,6 +50,10 @@
   object-fit: cover;
 }
 
+.loader-container {
+  overflow: hidden;
+}
+
 .loader-container svg {
   animation-name: rotate;
   animation-duration: 250ms;
@@ -79,4 +83,25 @@
   animation-iteration-count: infinite;
   background-color: #ababab;
   transform: skewX(-40deg);
+}
+
+.button {
+  outline: none;
+  appearance: none;
+  border: none;
+  background: #000;
+  padding: 20px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #fff;
+  transition: 0.2s all ease-in-out;
+}
+
+.button:hover {
+  background: #1e1e1e;
+  transform: scale(1.05);
+}
+
+.button:active {
+  transform: scale(0.95);
 }
