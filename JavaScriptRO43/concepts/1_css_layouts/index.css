@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.flexbox_v1 {
+  /* Enable flexbox functionality */
+  display: flex;
+
+  /* Set the direction of the items */
+  /* row value is set by default */
+  flex-direction: row;
+
+  /* Set a specific distance between items (divs) */
+  gap: 30px;
+
+  /* vh = viewport height */
+  height: 100vh;
+}
+
+.flexbox_v1 img {
+  width: 100%;
+  height: 100%;
+  /* Prevent image to be stretched */
+  object-fit: cover;
+}
+
+.flexbox_v2 {
+  display: flex;
+  gap: 30px;
+
+  /* Put items on the next line if needed */
+  flex-wrap: wrap;
+}
+
+.flexbox_v2__card {
+  /* Set a max width to prevent paragraph to be in one line */
+  max-width: 400px;
+}
