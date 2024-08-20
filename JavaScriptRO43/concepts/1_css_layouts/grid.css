@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* To view the sections better */
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+/* Grid: v1 - Align one item in the center (x,y) */
+.grid_v1 {
+  display: grid;
+  height: 100vh;
+
+  /* justify-items: center;
+  align-items: center; */
+  /* Shorthand for properties above */
+  place-items: center;
+
+  /* justify-content: center;
+  align-content: center; */
+  /* Shorthand for properties above */
+  /* place-content: start end; */
+}
+
+/* Grid: v2 - Align all the items in the center (x,y) */
+.grid_v2 {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+/* Grid: v3 - Align different items in different positions */
+.grid_v3 {
+  display: grid;
+
+  /* Set 3 columns to our grid */
+  grid-template-columns: 1fr 1fr 1fr;
+
+  height: 100vh;
+}
+
+.grid_v3__item--1 img,
+.grid_v3__item--2 img,
+.grid_v3__item--3 img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.grid_v3__item--1 {
+  align-self: end;
+  justify-self: center;
+  /* Shorthand for properties above */
+  /* place-self: end center */
+  width: 75%;
+}
+
+.grid_v3__item--2 {
+  place-self: center end;
+  width: 75%;
+}
+
+/* Grid: v4 - Specify to each item the cells that should be occupied (dashboard layout) */
+.grid_v4 {
+  display: grid;
+
+  /* repeat fn used to define multipe columns with the same width */
+  grid-template-columns: repeat(4, 1fr);
+  /* property to specify the number of rows */
+  grid-template-rows: auto;
+
+  /* define the cells that should be occupied by items */
+  grid-template-areas:
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+
+  height: 100vh;
+}
+
+.grid_v4__item--1 {
+  grid-area: header;
+  background-color: blue;
+}
+
+.grid_v4__item--2 {
+  grid-area: footer;
+  background-color: red;
+}
+
+.grid_v4__item--3 {
+  grid-area: sidebar;
+  background-color: green;
+}
+
+.grid_v4__item--4 {
+  grid-area: main;
+  background-color: pink;
+}
