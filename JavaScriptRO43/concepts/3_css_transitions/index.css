@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
+
+/* Transition: Button Hover Effect  */
+.transition_v1 {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  /* Transition properties */
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+  transition-delay: 1s;
+  transition-property: background-color;
+}
+
+.transition_v1:hover {
+  background-color: #2ecc71;
+}
+
+.transition_v1:active {
+  background-color: #16679d;
+}
+
+/* Transition: Expanding Card on Hover */
+.transition_v2 {
+  width: 350px;
+  height: 350px;
+  background-color: #f1c40f;
+  border-radius: 20px;
+  padding: 20px;
+  /* Transition shorthand */
+  transition: width 0.5s ease-in-out, height 0.3s ease-in;
+}
+
+.transition_v2:hover {
+  width: 400px;
+  height: 400px;
+}
+
+/* Transition: Dropdown Menu with Smooth Opening */
+.transition_v3__items {
+  display: flex;
+  flex-direction: column;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #e74c3c;
+  transition: max-height 0.5s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+
+.transition_v3__btn:hover + .transition_v3__items {
+  max-height: 200px;
+}
+
+/* Transition: Image Zoom on Hover */
+.transition_v4 {
+  height: 500px;
+  width: 350px;
+  overflow: hidden;
+}
+
+.transition_v4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.transition_v4 img:hover {
+  transform: scale(1.2);
+}
