@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Transform: Scale function */
+.transform_v1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.transform_v1__item--1 {
+  transform: scale(1.5);
+}
+.transform_v1__item--2 {
+  transform: scale(2.5);
+}
+
+/*  Transform: Translate function (2D)  */
+.transform_v2 {
+  display: flex;
+  width: 50%;
+  height: 50vh;
+  background-color: aquamarine;
+  transform: translate(300px, -150px);
+}
+
+/*  Transform: Rotate function (2D) */
+.transform_v3 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: aqua;
+}
+
+.transform_v3 img {
+  /* transform: rotate(180deg); */
+  transform: rotate(90deg);
+}
+
+/* Transform: Perspective */
+.transform_v4 {
+  perspective: 300px;
+  width: 500px;
+}
+
+.transform_v4 p {
+  transform: rotateX(25deg) rotateY(20deg);
+  transform-style: preserve-3d;
+}
+
+/* Transform: Skew function (2d) */
+.transform_v5 {
+  transform: skew(45deg, -20deg);
+  width: 300px;
+  margin-top: 100px;
+}
