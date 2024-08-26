@@ -1,0 +1,66 @@
+/* Selects all the elements within a page */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Element selector selects all the form tags within a page  */
+form {
+  display: flex;
+}
+
+/* Selects elements with the specified attribute (type) */
+[type] {
+  color: red;
+}
+
+/* Selects all the elements with attribute type="text" */
+[type="text"] {
+  background: #000;
+}
+
+/* Selects all the inputs with attribute name="fullName" */
+input[name="fullName"] {
+  font-size: 18px;
+}
+
+/* Selects all the labels with attribute for starting with "f" */
+label[for^="f"] {
+  font-size: 18px;
+}
+
+/* Selects all the labels with attribute for ending with "Name" */
+label[for$="Name"] {
+  color: #ccc;
+}
+
+/* Selects all the labels with attribute for containing word "llN"*/
+label[for*="llN"] {
+  font-weight: 700;
+}
+
+/* Selects all the paragraphs that are direct children to the div */
+div > p {
+  font-size: 18px;
+}
+
+/* Selects first paragraph after a div */
+div + p {
+  color: blue;
+}
+
+/* Selects all the siblings of the div */
+div ~ p {
+  font-weight: 700;
+}
+
+/* Selects a list of selectors in the same order */
+:is(h1, h3) {
+  font-size: 24px;
+}
+
+/* Selects the div which has at least one paragraph */
+div:has(p) {
+  background-color: green;
+}
