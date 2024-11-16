@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
+    <!-- Animations: Fade in  -->
+    <section class="animation-fade-in">
+      <div class="animation-fade-in__gradient"></div>
+      <video
+        loop
+        muted
+        autoplay
+        preload="auto"
+        src="https://videos.pexels.com/video-files/17402144/17402144-hd_1920_1080_30fps.mp4"
+      ></video>
+    </section>
+
     <!-- Animations: Loader -->
     <div class="animation-loader">
       <svg
@@ -26,24 +38,22 @@
       </svg>
     </div>
 
-    <!-- Animations: Fade in  -->
-    <section class="animation-fade-in">
-      <div class="animation-fade-in__gradient" />
-      <video loop muted autoplay src=""></video>
-    </section>
-
     <!-- Animations: Skeleton loader -->
     <section class="animation-skeleton-loader">
-      <span class="animation-skeleton-loader__avatar" />
+      <span class="animation-skeleton-loader__avatar skeleton"></span>
       <div class="animation-skeleton-loader__container">
-        <span class="container__heading" />
-        <span class="container__para" />
+        <span class="container__heading skeleton"></span>
+        <span class="container__para skeleton"></span>
+        <span class="container__para skeleton"></span>
       </div>
     </section>
 
     <!-- Animations: Fade out -->
     <section class="animation-fade-out">
-      <img src="" alt="Fade out" />
+      <img
+        src="https://images.pexels.com/photos/27054224/pexels-photo-27054224/free-photo-of-motorbike-parked-on-hill-on-sea-coast.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="Fade out"
+      />
     </section>
 
     <!-- Transitions: Button -->
@@ -51,7 +61,10 @@
 
     <!-- Transitions: Card -->
     <section class="transition-card">
-      <img src="" alt="Card image" />
+      <img
+        src="https://images.pexels.com/photos/8402676/pexels-photo-8402676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="Card image"
+      />
       <div class="transition-card__content">
         <h1>Lorem ipsum dolor sit, amet</h1>
         <p>
@@ -59,33 +72,6 @@
           voluptatibus quidem odio maxime ad quae tempore enim, tempora quas
           suscipit numquam odit atque dolore iusto, iste sapiente, nemo magnam.
         </p>
-      </div>
-    </section>
-
-    <!-- Transitions: Gallery -->
-    <section class="transition-gallery">
-      <div class="transition-gallery__image">
-        <img src="" alt="Gallery image" />
-      </div>
-
-      <div class="transition-gallery__image">
-        <img src="" alt="Gallery image" />
-      </div>
-
-      <div class="transition-gallery__image">
-        <img src="" alt="Gallery image" />
-      </div>
-
-      <div class="transition-gallery__image">
-        <img src="" alt="Gallery image" />
-      </div>
-
-      <div class="transition-gallery__image">
-        <img src="" alt="Gallery image" />
-      </div>
-
-      <div class="transition-gallery__image">
-        <img src="" alt="Gallery image" />
       </div>
     </section>
   </body>
