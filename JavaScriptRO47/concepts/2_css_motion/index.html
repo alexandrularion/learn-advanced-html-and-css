@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Motion</title>
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!-- Animations: Loader -->
+    <div class="animation-loader">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
+        />
+      </svg>
+    </div>
+
+    <!-- Animations: Fade in  -->
+    <section class="animation-fade-in">
+      <div class="animation-fade-in__gradient" />
+      <video loop muted autoplay src=""></video>
+    </section>
+
+    <!-- Animations: Skeleton loader -->
+    <section class="animation-skeleton-loader">
+      <span class="animation-skeleton-loader__avatar" />
+      <div class="animation-skeleton-loader__container">
+        <span class="container__heading" />
+        <span class="container__para" />
+      </div>
+    </section>
+
+    <!-- Animations: Fade out -->
+    <section class="animation-fade-out">
+      <img src="" alt="Fade out" />
+    </section>
+
+    <!-- Transitions: Button -->
+    <button class="transition-btn">Hover me</button>
+
+    <!-- Transitions: Card -->
+    <section class="transition-card">
+      <img src="" alt="Card image" />
+      <div class="transition-card__content">
+        <h1>Lorem ipsum dolor sit, amet</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex error
+          voluptatibus quidem odio maxime ad quae tempore enim, tempora quas
+          suscipit numquam odit atque dolore iusto, iste sapiente, nemo magnam.
+        </p>
+      </div>
+    </section>
+
+    <!-- Transitions: Gallery -->
+    <section class="transition-gallery">
+      <div class="transition-gallery__image">
+        <img src="" alt="Gallery image" />
+      </div>
+
+      <div class="transition-gallery__image">
+        <img src="" alt="Gallery image" />
+      </div>
+
+      <div class="transition-gallery__image">
+        <img src="" alt="Gallery image" />
+      </div>
+
+      <div class="transition-gallery__image">
+        <img src="" alt="Gallery image" />
+      </div>
+
+      <div class="transition-gallery__image">
+        <img src="" alt="Gallery image" />
+      </div>
+
+      <div class="transition-gallery__image">
+        <img src="" alt="Gallery image" />
+      </div>
+    </section>
+  </body>
+</html>
