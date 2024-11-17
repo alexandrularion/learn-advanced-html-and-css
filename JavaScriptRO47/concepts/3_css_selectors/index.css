@@ -1,0 +1,81 @@
+/* Selects any tag in the html page */
+* {
+  padding: 0;
+}
+
+/* Selects the "heading" class */
+.heading {
+  color: #1c1c1b;
+}
+
+/* Selects the "paragraph" id */
+#paragraph {
+  color: #ccc;
+}
+
+/* Descendant Selector: Selects all the paragraphs within section*/
+section p {
+  font-size: 16px;
+}
+
+/* Combinator Selector: Selects all the paragraphs that are direct children to the section */
+section > p {
+  color: #4fc1ff;
+}
+
+/* Combinator Selector: Selects the next sibling of the heading tag */
+section div h2 + p {
+  background-color: #f5f5dc;
+}
+
+/* Combinator Selector: Selects all the next paragraph siblings of the heading tag */
+section div h2 ~ p {
+  color: #1dafaf;
+}
+
+/* Conditional Selector: Selects all the headings within main tag by checking */
+main:has(h3) {
+  color: #ccc;
+}
+
+/* Attribute Selector: Selects all the tags with attribute "name"  */
+[name] {
+  font-size: 16px;
+}
+
+/* Attribute Selector: 
+Selects all the tags with attribute "name" which have the value "email" */
+[name="email"] {
+  color: #4fc1ff;
+}
+
+/* Attribute Selector: 
+Selects all the tags with attribute "type" which have a specific prefix value */
+[type^="t"] {
+  height: 50px;
+}
+
+/* Attribute Selector: 
+Selects all the labels tags with attribute "for" which have the value "email" */
+label[for="email"] {
+  font-size: 16px;
+}
+
+/* Pseudo-class: First child */
+li:first-child {
+  padding: 30px;
+}
+
+/* Pseudo-class: Last child*/
+li:last-child {
+  padding: 30px;
+}
+
+/* Pseudo-class: Select the third child (nth-child) */
+div:nth-child(3) {
+  color: #1dafaf;
+}
+
+li:nth-of-type(3) {
+  color: red;
+}
