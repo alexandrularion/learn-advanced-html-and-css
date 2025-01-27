@@ -1,0 +1,29 @@
+/* 
+Selects all elements one by one and apply the styles
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.flexbox-v1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+}
+
+.flexbox-v1 img {
+  height: 400px;
+  object-fit: contain;
+}
+
+.flexbox-v2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
