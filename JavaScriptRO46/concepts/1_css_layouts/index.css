@@ -49,3 +49,48 @@ Selects all elements one by one and apply the styles
   background-color: beige;
   order: 1;
 }
+
+.position-v1 {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+.position-v1__bkg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.position-v1__overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+}
+
+.position-v1__overlay h1 {
+  color: #fff;
+}
+
+.position-v1__overlay p {
+  color: #ddd;
+  text-align: center;
+}
+
+.position-v1__gradient {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 15;
+}
