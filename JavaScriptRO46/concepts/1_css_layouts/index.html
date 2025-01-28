@@ -8,8 +8,24 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <!-- Position: Create a sticky or fixed navigation  -->
+    <nav class="position-v2">
+      <ul class="position-v2__list">
+        <li class="list__link">
+          <a href="#explore">Explore</a>
+        </li>
+        <li class="list__link">
+          <a href="#recipes">Recipes</a>
+        </li>
+        <li class="list__link">
+          <a href="#top-places">Top places to visit</a>
+        </li>
+      </ul>
+      <button class="position-v2__btn">Sign up</button>
+    </nav>
+
     <!-- Flexbox: Centery anything (vertically and horizontally) -->
-    <section class="flexbox-v1">
+    <section id="explore" class="flexbox-v1">
       <h1>Explore wild nature</h1>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
@@ -23,7 +39,7 @@
     </section>
 
     <!-- Flexbox: Multiple elements in multiple rows -->
-    <section class="flexbox-v2">
+    <section id="recipes" class="flexbox-v2">
       <div class="flexbox-v2__card">
         <h3>Prajitura Fanta cu suc natural de portocale – reteta video</h3>
         <p>02/12/2024</p>
@@ -92,7 +108,7 @@
     </section>
 
     <!-- Position: Put items above / under other items  -->
-    <section class="position-v1">
+    <section id="top-places" class="position-v1">
       <img
         class="position-v1__bkg"
         src="https://images.pexels.com/photos/808910/pexels-photo-808910.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"

@@ -94,3 +94,35 @@ Selects all elements one by one and apply the styles
   background: rgba(0, 0, 0, 0.5);
   z-index: 15;
 }
+
+.position-v2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 80px;
+  width: 100%;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  margin-top: 80px;
+}
+
+.position-v2__list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.list__link a {
+  text-decoration: none;
+}
+
+.position-v2__btn {
+  padding: 15px 25px;
+  border: none;
+  background-color: beige;
+  color: #000;
+  border-radius: 10px;
+}
