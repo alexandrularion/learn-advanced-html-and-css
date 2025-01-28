@@ -27,3 +27,25 @@ Selects all elements one by one and apply the styles
   flex-wrap: wrap;
   gap: 30px;
 }
+
+.flexbox-v3 {
+  display: flex;
+  align-items: center;
+  height: 80vh;
+}
+
+.flexbox-v3__card--1 {
+  background-color: aquamarine;
+  order: 2;
+  align-self: flex-end;
+}
+
+.flexbox-v3__card--2 {
+  background-color: blue;
+  order: 0;
+}
+
+.flexbox-v3__card--3 {
+  background-color: beige;
+  order: 1;
+}
