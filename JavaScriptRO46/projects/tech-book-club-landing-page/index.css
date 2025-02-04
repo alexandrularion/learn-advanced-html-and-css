@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 1174px;
+  height: 100%;
+}
+
+#section-hero {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  height: 100vh;
+  background: url(./assets/pattern.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.section-hero__layout {
+  gap: 80px;
+}
+
+.section-hero__navbar {
+  display: flex;
+  width: 100%;
+}
+
+.section-hero__navbar img {
+  width: 189px;
+  object-fit: contain;
+}
+
+.section-hero__container {
+  display: flex;
+  gap: 64px;
+  width: 100%;
+}
+
+.container__img {
+  height: 606px;
+  min-width: 540px;
+}
+
+.container__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
