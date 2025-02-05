@@ -117,27 +117,27 @@
   background-size: cover;
 }
 
-.section-hero__layout {
+#section-hero .section-hero__layout {
   gap: 80px;
 }
 
-.section-hero__navbar {
+#section-hero .section-hero__navbar {
   display: flex;
   width: 100%;
 }
 
-.section-hero__navbar img {
+#section-hero .section-hero__navbar img {
   width: 189px;
   object-fit: contain;
 }
 
-.section-hero__container {
+#section-hero .section-hero__container {
   display: flex;
   gap: 64px;
   width: 100%;
 }
 
-.container__content h1 {
+#section-hero .container__content h1 {
   background: var(--heading-gradient);
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -145,29 +145,80 @@
   padding-bottom: 24px;
 }
 
-.container__content p {
+#section-hero .container__content p {
   color: var(--neutral-900-color);
   padding-bottom: 32px;
 }
 
-.content__testimonials {
+#section-hero .content__testimonials {
   display: flex;
   align-items: center;
   gap: 12px;
   padding-top: 20px;
 }
 
-.testimonials__container span {
+#section-hero .testimonials__container span {
   color: var(--neutral-700-color);
 }
 
-.container__img {
-  height: 606px;
+#section-hero .container__img {
+  height: 100%;
   min-width: 540px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.container__img img {
+#section-hero .container__img img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+#section-benefits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  background-color: var(--neutral-0-color);
+}
+
+#section-benefits .section-layout {
+  flex-direction: row;
+  gap: 80px;
+}
+
+#section-benefits .section-benefits__img {
+  min-width: 560px;
+  height: 75%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#section-benefits .section-benefits__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#section-benefits .section-benefits__content {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+#section-benefits .section-benefits__content h1 {
+  color: var(--neutral-900-color);
+}
+
+#section-benefits .content__benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#section-benefits .benefits__container {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 14px;
 }
